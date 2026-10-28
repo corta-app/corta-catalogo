@@ -25,6 +25,10 @@ Aquí viven los efectos, filtros y plantillas que Corta descarga. Son **solo dat
 necesita primero el cambio en la app (vista previa y exportación con ffmpeg, con sus pruebas) y una versión publicada; después se
 copia aquí. Así un efecto del catálogo nunca le llega a una app que no lo entiende.
 
+## Licencia de lo que aportas
+Todo el catálogo es de dominio público con [CC0 1.0](LICENSE). Al abrir un issue o un pull request con un efecto o una plantilla,
+aceptas publicarlo así: cualquiera lo puede usar, también en videos comerciales, sin pedir permiso. Aporta solo lo que hiciste tú.
+
 ## Cómo revisamos
 Todo entra por pull request y lo junta alguien que mantiene el proyecto. Revisamos que el JSON pase la validación (GitHub la corre
 en cada pull request, sin secretos y con permiso de solo lectura), que no traiga nada personal ni copiado y que se vea bien.

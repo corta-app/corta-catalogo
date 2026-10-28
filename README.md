@@ -93,6 +93,11 @@ persona no tiene, Corta le ofrece descargarlo.
 
 Más detalle en [CONTRIBUTING.md](CONTRIBUTING.md). Todo aporte lo revisa una persona antes de entrar.
 
+## Licencia
+Todo el contenido del catálogo (efectos, plantillas e índices) es de dominio público con [CC0 1.0](LICENSE): cualquiera puede usarlo,
+cambiarlo y compartirlo, también en videos comerciales, sin pedir permiso ni nombrar a nadie. Al aportar, aceptas publicar tu aporte
+así. El código de `herramientas/` es el mismo de la app y sigue con su licencia, [AGPL-3.0](https://github.com/corta-app/corta/blob/main/LICENSE).
+
 🔒 ¿Una falla de seguridad? Avísanos en privado: [SECURITY.md](SECURITY.md).
 
 ---
@@ -119,3 +124,7 @@ offers to download it.
 or ["Propose a template"](https://github.com/corta-app/corta-catalogo/issues/new?template=plantilla.yml) issue (for templates you can
 just describe the slots in words), or a pull request after running `python3 herramientas/generar_indice.py`. A maintainer reviews
 every contribution. Security issues: please report them privately ([SECURITY.md](SECURITY.md)).
+
+**License:** everything in the catalog (effects, templates and indexes) is dedicated to the public domain under [CC0 1.0](LICENSE):
+anyone can use, change and share it, including in commercial videos, without asking or giving credit. By contributing, you agree to
+release your contribution the same way.

@@ -195,6 +195,35 @@
    "archivo": "efectos/transicion/fundido-blanco.json",
    "sha256": "6544ebbefb85c9631468bb70a4ed0aee2403154889b1697d9c688dfcf5a1d4b9",
    "bytes": 463
+  },
+  {
+   "formato": 1,
+   "id": "parpadeo",
+   "categoria": "transicion",
+   "nombre": {
+    "es": "Parpadeo",
+    "en": "Blink"
+   },
+   "descripcion": {
+    "es": "Un parpadeo blanco muy corto en cada unión, al ritmo de la música.",
+    "en": "A very short white blink at every join, on the beat."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "ritmo",
+    "beat",
+    "flash"
+   ],
+   "pasos": [
+    {
+     "tipo": "transicion",
+     "duracion": 0.16,
+     "color": "blanco"
+    }
+   ],
+   "archivo": "efectos/transicion/parpadeo.json",
+   "sha256": "34ba1993ec8b0cd352bfed6a69f2f9bfc3afe91dece9e646f8981d205150e707",
+   "bytes": 444
   }
  ]
 }

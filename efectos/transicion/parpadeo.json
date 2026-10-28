@@ -1,0 +1,26 @@
+{
+ "formato": 1,
+ "id": "parpadeo",
+ "categoria": "transicion",
+ "nombre": {
+  "es": "Parpadeo",
+  "en": "Blink"
+ },
+ "descripcion": {
+  "es": "Un parpadeo blanco muy corto en cada unión, al ritmo de la música.",
+  "en": "A very short white blink at every join, on the beat."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "ritmo",
+  "beat",
+  "flash"
+ ],
+ "pasos": [
+  {
+   "tipo": "transicion",
+   "duracion": 0.16,
+   "color": "blanco"
+  }
+ ]
+}

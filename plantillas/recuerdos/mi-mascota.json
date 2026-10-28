@@ -1,0 +1,87 @@
+{
+ "formato": 1,
+ "id": "mi-mascota",
+ "categoria": "recuerdos",
+ "nombre": {
+  "es": "Mi mascota",
+  "en": "My pet"
+ },
+ "descripcion": {
+  "es": "Cinco momentos de tu mascota en tonos suaves, para el feed.",
+  "en": "Five moments of your pet in soft tones, for the feed."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "perro",
+  "gato",
+  "dog",
+  "cat"
+ ],
+ "proporcion": "4:5",
+ "huecos": [
+  {
+   "dur": 2.5,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "Su cara",
+    "en": "Their face"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 2,
+   "tipo": "video",
+   "pista": {
+    "es": "Jugando",
+    "en": "Playing"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 2,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "Durmiendo",
+    "en": "Sleeping"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 2,
+   "tipo": "video",
+   "pista": {
+    "es": "Comiendo",
+    "en": "Eating"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 3,
+   "tipo": "foto",
+   "pista": {
+    "es": "Su mejor foto",
+    "en": "Their best photo"
+   }
+  }
+ ],
+ "textos": [
+  {
+   "en_hueco": 4,
+   "texto": {
+    "es": "Mi mejor amigo",
+    "en": "My best friend"
+   },
+   "posicion": 0.75
+  }
+ ],
+ "subtitulos": {
+  "estilo": "suave",
+  "activos": false
+ },
+ "efectos": [
+  "pastel"
+ ],
+ "musica": {
+  "bpm": 95
+ }
+}

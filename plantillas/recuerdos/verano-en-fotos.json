@@ -1,0 +1,81 @@
+{
+ "formato": 1,
+ "id": "verano-en-fotos",
+ "categoria": "recuerdos",
+ "nombre": {
+  "es": "Verano en fotos",
+  "en": "Summer in photos"
+ },
+ "descripcion": {
+  "es": "Seis fotos al ritmo, con colores de verano y un parpadeo en cada cambio.",
+  "en": "Six photos on the beat, with summer colors and a blink at every change."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "vacaciones",
+  "playa",
+  "summer",
+  "holiday"
+ ],
+ "proporcion": "9:16",
+ "huecos": [
+  {
+   "dur": 1.5,
+   "tipo": "foto",
+   "pista": {
+    "es": "La primera foto",
+    "en": "The first photo"
+   },
+   "transicion": "parpadeo"
+  },
+  {
+   "dur": 1.5,
+   "tipo": "foto",
+   "transicion": "parpadeo"
+  },
+  {
+   "dur": 1.5,
+   "tipo": "foto",
+   "transicion": "parpadeo"
+  },
+  {
+   "dur": 1.5,
+   "tipo": "foto",
+   "transicion": "parpadeo"
+  },
+  {
+   "dur": 1.5,
+   "tipo": "foto",
+   "transicion": "parpadeo"
+  },
+  {
+   "dur": 2.5,
+   "tipo": "foto",
+   "pista": {
+    "es": "La mejor",
+    "en": "The best one"
+   }
+  }
+ ],
+ "textos": [
+  {
+   "en_hueco": 0,
+   "texto": {
+    "es": "Verano",
+    "en": "Summer"
+   },
+   "posicion": 0.18
+  }
+ ],
+ "subtitulos": {
+  "estilo": "titular",
+  "activos": false
+ },
+ "efectos": [
+  "verano",
+  "fundido-salida"
+ ],
+ "musica": {
+  "bpm": 120
+ }
+}

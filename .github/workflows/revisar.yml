@@ -1,4 +1,4 @@
-# Revisión automática de cada pull request y cambio: los efectos son solo datos válidos y el índice está al día.
+# Revisión automática de cada pull request y cambio: los efectos y las plantillas son solo datos válidos y los índices están al día.
 # Corre con «pull_request» (nunca «pull_request_target»): el código de un aporte corre sin secretos y con permiso de solo lectura.
 name: Revisar
 on:
@@ -14,11 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with: { persist-credentials: false }
-      - name: Solo archivos de datos (JSON) en efectos/
+      - name: Solo archivos de datos (JSON) en efectos/ y plantillas/
         run: |
-          raros=$(git ls-files efectos | grep -v '\.json$' || true)
+          raros=$(git ls-files efectos plantillas | grep -v '\.json$' || true)
           [ -z "$raros" ] || { echo "Archivos que no son JSON: $raros"; exit 1; }
-      - name: Validar los efectos y revisar que el índice esté al día
+      - name: Validar los efectos y las plantillas y revisar que los índices estén al día
         run: |
           python3 herramientas/generar_indice.py
-          git diff --exit-code -- efectos/index.json || { echo "Corre python3 herramientas/generar_indice.py y sube el índice."; exit 1; }
+          git diff --exit-code -- efectos/index.json plantillas/index.json || { echo "Corre python3 herramientas/generar_indice.py y sube los índices."; exit 1; }

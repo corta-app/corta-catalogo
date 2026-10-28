@@ -1,0 +1,89 @@
+{
+ "formato": 1,
+ "id": "pelicula-de-viaje",
+ "categoria": "recuerdos",
+ "nombre": {
+  "es": "Película de viaje",
+  "en": "Travel film"
+ },
+ "descripcion": {
+  "es": "Horizontal y con aire de cine: llegada, paseo y despedida.",
+  "en": "Landscape with a film look: arrival, wandering and goodbye."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "viaje",
+  "cine",
+  "travel",
+  "film"
+ ],
+ "proporcion": "16:9",
+ "huecos": [
+  {
+   "dur": 4,
+   "tipo": "video",
+   "pista": {
+    "es": "La llegada",
+    "en": "Arriving"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 3,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "Un lugar",
+    "en": "A place"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 3,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "Otro lugar",
+    "en": "Another place"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 3,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "La comida",
+    "en": "The food"
+   },
+   "transicion": "transicion-negro"
+  },
+  {
+   "dur": 4,
+   "tipo": "video",
+   "pista": {
+    "es": "La despedida",
+    "en": "Saying goodbye"
+   }
+  }
+ ],
+ "textos": [
+  {
+   "en_hueco": 0,
+   "texto": {
+    "es": "El viaje",
+    "en": "The trip"
+   },
+   "posicion": 0.82
+  }
+ ],
+ "subtitulos": {
+  "estilo": "suave",
+  "activos": true
+ },
+ "efectos": [
+  "pelicula",
+  "fundido-entrada",
+  "fundido-salida"
+ ],
+ "musica": {
+  "bpm": 80
+ }
+}

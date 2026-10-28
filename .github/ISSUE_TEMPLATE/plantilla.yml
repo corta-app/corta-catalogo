@@ -1,0 +1,67 @@
+name: 🎞️ Proponer una plantilla / Propose a template
+description: Cuéntanos tu plantilla con palabras o pega su JSON. / Describe your template in words or paste its JSON.
+labels: [propuesta, plantilla]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Una plantilla es un video armado con **huecos** para clips o fotos: cuánto dura cada uno, qué efecto lleva, cómo pasa al
+        siguiente y qué texto aparece. No hace falta programar: llena lo que sepas y nosotros armamos el JSON. Formato y ejemplos en el
+        [README](https://github.com/corta-app/corta-catalogo#plantillas). Solo datos: nada de código, HTML, música, fotos ni datos personales.
+
+        A template is a pre-made video with **slots** for clips or photos: how long each lasts, which effect it has, how it moves to the
+        next one and which text shows up. No coding needed: fill in what you know and we'll write the JSON. Data only: no code, HTML,
+        music, photos or personal data.
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre (y en inglés si puedes) / Name (and in Spanish if you can)
+      placeholder: Receta en 20 s / 20-second recipe
+    validations: { required: true }
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoría / Category
+      options:
+        - negocios (business)
+        - presentacion (intros, before and after)
+        - recuerdos (memories, recaps)
+        - tutorial
+        - celebracion (birthdays, parties)
+    validations: { required: true }
+  - type: dropdown
+    id: proporcion
+    attributes:
+      label: Formato / Aspect ratio
+      options: ["9:16 (Shorts, Reels, TikTok)", "1:1", "4:5", "16:9"]
+    validations: { required: true }
+  - type: textarea
+    id: huecos
+    attributes:
+      label: Los huecos, en orden / The slots, in order
+      description: |
+        Una línea por hueco: segundos · video, foto o cualquiera · qué poner · efecto (opcional) · cómo pasa al siguiente (opcional) · texto encima (opcional).
+        One line per slot: seconds · video, photo or any · what to put · effect (optional) · transition to the next (optional) · text on top (optional).
+      placeholder: |
+        2.5 · video · el producto de frente · vivido · destello · «Nuevo»
+        3 · foto · el precio · zoom lento · — · «Solo hoy»
+    validations: { required: true }
+  - type: input
+    id: ritmo
+    attributes:
+      label: Ritmo de la música para la que la pensaste (opcional) / Music tempo you designed it for (optional)
+      placeholder: 120 BPM
+  - type: textarea
+    id: json
+    attributes:
+      label: O el JSON, si ya lo tienes (opcional) / Or the JSON, if you have it (optional)
+      render: json
+  - type: checkboxes
+    id: reglas
+    attributes:
+      label: Antes de enviar / Before sending
+      options:
+        - label: No tiene nada personal, marcas ni música o imágenes de otros / It has nothing personal, branded, or other people's music or images
+          required: true
+        - label: Acepto que se publique gratis para todos, como el resto del catálogo / I agree it's published for free for everyone, like the rest of the catalog
+          required: true

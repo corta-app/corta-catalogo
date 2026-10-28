@@ -1,0 +1,351 @@
+{
+ "formato": 1,
+ "plantillas": [
+  {
+   "formato": 1,
+   "id": "oferta-del-dia",
+   "categoria": "negocios",
+   "nombre": {
+    "es": "Oferta del día",
+    "en": "Deal of the day"
+   },
+   "descripcion": {
+    "es": "Cuadrado para el feed: el producto, el detalle y el precio con un zoom que llama la atención.",
+    "en": "Square for the feed: the product, the detail and the price with an eye-catching zoom."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "oferta",
+    "descuento",
+    "deal",
+    "sale"
+   ],
+   "proporcion": "1:1",
+   "huecos": [
+    {
+     "dur": 2,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "El producto",
+      "en": "The product"
+     },
+     "transicion": "destello"
+    },
+    {
+     "dur": 2,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "Un detalle",
+      "en": "A detail"
+     },
+     "transicion": "destello"
+    },
+    {
+     "dur": 3,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "El precio",
+      "en": "The price"
+     },
+     "efectos": [
+      "zoom-dramatico"
+     ]
+    }
+   ],
+   "textos": [
+    {
+     "en_hueco": 0,
+     "texto": {
+      "es": "Oferta del día",
+      "en": "Deal of the day"
+     },
+     "posicion": 0.18
+    },
+    {
+     "en_hueco": 2,
+     "texto": {
+      "es": "Solo hoy",
+      "en": "Today only"
+     },
+     "posicion": 0.75
+    }
+   ],
+   "subtitulos": {
+    "estilo": "caja",
+    "activos": true
+   },
+   "efectos": [
+    "vivido"
+   ],
+   "archivo": "plantillas/negocios/oferta-del-dia.json",
+   "sha256": "afdb6fe00804d88d9fc904e7ccc1e95ed8c3d483a7c75874fa3eae190b612fbe",
+   "bytes": 1264
+  },
+  {
+   "formato": 1,
+   "id": "mi-mascota",
+   "categoria": "recuerdos",
+   "nombre": {
+    "es": "Mi mascota",
+    "en": "My pet"
+   },
+   "descripcion": {
+    "es": "Cinco momentos de tu mascota en tonos suaves, para el feed.",
+    "en": "Five moments of your pet in soft tones, for the feed."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "perro",
+    "gato",
+    "dog",
+    "cat"
+   ],
+   "proporcion": "4:5",
+   "huecos": [
+    {
+     "dur": 2.5,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "Su cara",
+      "en": "Their face"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 2,
+     "tipo": "video",
+     "pista": {
+      "es": "Jugando",
+      "en": "Playing"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 2,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "Durmiendo",
+      "en": "Sleeping"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 2,
+     "tipo": "video",
+     "pista": {
+      "es": "Comiendo",
+      "en": "Eating"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 3,
+     "tipo": "foto",
+     "pista": {
+      "es": "Su mejor foto",
+      "en": "Their best photo"
+     }
+    }
+   ],
+   "textos": [
+    {
+     "en_hueco": 4,
+     "texto": {
+      "es": "Mi mejor amigo",
+      "en": "My best friend"
+     },
+     "posicion": 0.75
+    }
+   ],
+   "subtitulos": {
+    "estilo": "suave",
+    "activos": false
+   },
+   "efectos": [
+    "pastel"
+   ],
+   "musica": {
+    "bpm": 95
+   },
+   "archivo": "plantillas/recuerdos/mi-mascota.json",
+   "sha256": "e1dd9aa77c31c8cad1bc67e43d8a11bbc78bd1d41eacf960011dd99084f6f720",
+   "bytes": 1341
+  },
+  {
+   "formato": 1,
+   "id": "pelicula-de-viaje",
+   "categoria": "recuerdos",
+   "nombre": {
+    "es": "Película de viaje",
+    "en": "Travel film"
+   },
+   "descripcion": {
+    "es": "Horizontal y con aire de cine: llegada, paseo y despedida.",
+    "en": "Landscape with a film look: arrival, wandering and goodbye."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "viaje",
+    "cine",
+    "travel",
+    "film"
+   ],
+   "proporcion": "16:9",
+   "huecos": [
+    {
+     "dur": 4,
+     "tipo": "video",
+     "pista": {
+      "es": "La llegada",
+      "en": "Arriving"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 3,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "Un lugar",
+      "en": "A place"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 3,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "Otro lugar",
+      "en": "Another place"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 3,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "La comida",
+      "en": "The food"
+     },
+     "transicion": "transicion-negro"
+    },
+    {
+     "dur": 4,
+     "tipo": "video",
+     "pista": {
+      "es": "La despedida",
+      "en": "Saying goodbye"
+     }
+    }
+   ],
+   "textos": [
+    {
+     "en_hueco": 0,
+     "texto": {
+      "es": "El viaje",
+      "en": "The trip"
+     },
+     "posicion": 0.82
+    }
+   ],
+   "subtitulos": {
+    "estilo": "suave",
+    "activos": true
+   },
+   "efectos": [
+    "pelicula",
+    "fundido-entrada",
+    "fundido-salida"
+   ],
+   "musica": {
+    "bpm": 80
+   },
+   "archivo": "plantillas/recuerdos/pelicula-de-viaje.json",
+   "sha256": "96ad3e76eb549a16f2927e2937d8ee53db3d2b9475a4c9a3d4182359575c8562",
+   "bytes": 1413
+  },
+  {
+   "formato": 1,
+   "id": "verano-en-fotos",
+   "categoria": "recuerdos",
+   "nombre": {
+    "es": "Verano en fotos",
+    "en": "Summer in photos"
+   },
+   "descripcion": {
+    "es": "Seis fotos al ritmo, con colores de verano y un parpadeo en cada cambio.",
+    "en": "Six photos on the beat, with summer colors and a blink at every change."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "vacaciones",
+    "playa",
+    "summer",
+    "holiday"
+   ],
+   "proporcion": "9:16",
+   "huecos": [
+    {
+     "dur": 1.5,
+     "tipo": "foto",
+     "pista": {
+      "es": "La primera foto",
+      "en": "The first photo"
+     },
+     "transicion": "parpadeo"
+    },
+    {
+     "dur": 1.5,
+     "tipo": "foto",
+     "transicion": "parpadeo"
+    },
+    {
+     "dur": 1.5,
+     "tipo": "foto",
+     "transicion": "parpadeo"
+    },
+    {
+     "dur": 1.5,
+     "tipo": "foto",
+     "transicion": "parpadeo"
+    },
+    {
+     "dur": 1.5,
+     "tipo": "foto",
+     "transicion": "parpadeo"
+    },
+    {
+     "dur": 2.5,
+     "tipo": "foto",
+     "pista": {
+      "es": "La mejor",
+      "en": "The best one"
+     }
+    }
+   ],
+   "textos": [
+    {
+     "en_hueco": 0,
+     "texto": {
+      "es": "Verano",
+      "en": "Summer"
+     },
+     "posicion": 0.18
+    }
+   ],
+   "subtitulos": {
+    "estilo": "titular",
+    "activos": false
+   },
+   "efectos": [
+    "verano",
+    "fundido-salida"
+   ],
+   "musica": {
+    "bpm": 120
+   },
+   "archivo": "plantillas/recuerdos/verano-en-fotos.json",
+   "sha256": "18ed62fc9e78f7b26c43861747e78bf1e904be8cc3f404cf48c68a9c18e51568",
+   "bytes": 1264
+  }
+ ]
+}

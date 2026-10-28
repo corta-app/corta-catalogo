@@ -1,0 +1,77 @@
+{
+ "formato": 1,
+ "id": "oferta-del-dia",
+ "categoria": "negocios",
+ "nombre": {
+  "es": "Oferta del día",
+  "en": "Deal of the day"
+ },
+ "descripcion": {
+  "es": "Cuadrado para el feed: el producto, el detalle y el precio con un zoom que llama la atención.",
+  "en": "Square for the feed: the product, the detail and the price with an eye-catching zoom."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "oferta",
+  "descuento",
+  "deal",
+  "sale"
+ ],
+ "proporcion": "1:1",
+ "huecos": [
+  {
+   "dur": 2,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "El producto",
+    "en": "The product"
+   },
+   "transicion": "destello"
+  },
+  {
+   "dur": 2,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "Un detalle",
+    "en": "A detail"
+   },
+   "transicion": "destello"
+  },
+  {
+   "dur": 3,
+   "tipo": "cualquiera",
+   "pista": {
+    "es": "El precio",
+    "en": "The price"
+   },
+   "efectos": [
+    "zoom-dramatico"
+   ]
+  }
+ ],
+ "textos": [
+  {
+   "en_hueco": 0,
+   "texto": {
+    "es": "Oferta del día",
+    "en": "Deal of the day"
+   },
+   "posicion": 0.18
+  },
+  {
+   "en_hueco": 2,
+   "texto": {
+    "es": "Solo hoy",
+    "en": "Today only"
+   },
+   "posicion": 0.75
+  }
+ ],
+ "subtitulos": {
+  "estilo": "caja",
+  "activos": true
+ },
+ "efectos": [
+  "vivido"
+ ]
+}

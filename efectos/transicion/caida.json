@@ -1,0 +1,27 @@
+{
+ "formato": 1,
+ "id": "caida",
+ "categoria": "transicion",
+ "nombre": {
+  "es": "Caída",
+  "en": "Drop"
+ },
+ "descripcion": {
+  "es": "La imagen cae y el clip siguiente baja desde arriba.",
+  "en": "The picture drops and the next clip comes down from above."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "slide",
+  "abajo",
+  "down"
+ ],
+ "pasos": [
+  {
+   "tipo": "barrido",
+   "duracion": 0.6,
+   "direccion": "abajo",
+   "desenfoque": 0.25
+  }
+ ]
+}

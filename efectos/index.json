@@ -167,6 +167,65 @@
   },
   {
    "formato": 1,
+   "id": "caida",
+   "categoria": "transicion",
+   "nombre": {
+    "es": "Caída",
+    "en": "Drop"
+   },
+   "descripcion": {
+    "es": "La imagen cae y el clip siguiente baja desde arriba.",
+    "en": "The picture drops and the next clip comes down from above."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "slide",
+    "abajo",
+    "down"
+   ],
+   "pasos": [
+    {
+     "tipo": "barrido",
+     "duracion": 0.6,
+     "direccion": "abajo",
+     "desenfoque": 0.25
+    }
+   ],
+   "archivo": "efectos/transicion/caida.json",
+   "sha256": "dbab5111034747448618339a1caf262a7a27788e6be1ec30a2ee7bf4f66ad4a3",
+   "bytes": 450
+  },
+  {
+   "formato": 1,
+   "id": "cortina",
+   "categoria": "transicion",
+   "nombre": {
+    "es": "Cortina",
+    "en": "Curtain"
+   },
+   "descripcion": {
+    "es": "Tres franjas horizontales se cruzan y abren el clip siguiente.",
+    "en": "Three horizontal strips cross and open the next clip."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "split",
+    "horizontal"
+   ],
+   "pasos": [
+    {
+     "tipo": "franjas",
+     "duracion": 0.8,
+     "franjas": 3,
+     "direccion": "horizontal"
+    }
+   ],
+   "archivo": "efectos/transicion/cortina.json",
+   "sha256": "ca95f271a4398ddf953f58a9e33aca653441db41be0a999e4bb61cef36afe832",
+   "bytes": 455
+  },
+  {
+   "formato": 1,
    "id": "fundido-blanco",
    "categoria": "transicion",
    "nombre": {
@@ -224,6 +283,76 @@
    "archivo": "efectos/transicion/parpadeo.json",
    "sha256": "34ba1993ec8b0cd352bfed6a69f2f9bfc3afe91dece9e646f8981d205150e707",
    "bytes": 444
+  },
+  {
+   "formato": 1,
+   "id": "pop-rosa",
+   "categoria": "transicion",
+   "nombre": {
+    "es": "Pop rosa",
+    "en": "Pink pop"
+   },
+   "descripcion": {
+    "es": "Un rebote con un destello rosado, para videos alegres.",
+    "en": "A bounce with a pink flash, for cheerful videos."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "beat",
+    "rosa",
+    "pink"
+   ],
+   "pasos": [
+    {
+     "tipo": "rebote",
+     "duracion": 0.4,
+     "intensidad": 0.7
+    },
+    {
+     "tipo": "destello",
+     "duracion": 0.3,
+     "color": "#FF5FA2",
+     "intensidad": 0.5,
+     "exposicion": 0.2
+    }
+   ],
+   "archivo": "efectos/transicion/pop-rosa.json",
+   "sha256": "259f7a0d667befd2b7562f3d85600d824b3e0b6e4734147fd25ec6c72e1a784b",
+   "bytes": 540
+  },
+  {
+   "formato": 1,
+   "id": "senal-perdida",
+   "categoria": "transicion",
+   "nombre": {
+    "es": "Señal perdida",
+    "en": "Lost signal"
+   },
+   "descripcion": {
+    "es": "La imagen se cae como una señal mala y vuelve ya con el clip siguiente.",
+    "en": "The picture breaks up like a bad signal and comes back on the next clip."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "glitch",
+    "tv",
+    "señal"
+   ],
+   "pasos": [
+    {
+     "tipo": "interferencia",
+     "duracion": 0.8,
+     "intensidad": 1
+    },
+    {
+     "tipo": "transicion",
+     "duracion": 0.2,
+     "color": "negro"
+    }
+   ],
+   "archivo": "efectos/transicion/senal-perdida.json",
+   "sha256": "6f645967207547f92e8c982a68ea50f4e3613e2de4e8471eaad856e919af0a89",
+   "bytes": 559
   }
  ]
 }

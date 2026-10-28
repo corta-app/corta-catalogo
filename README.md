@@ -41,6 +41,17 @@ Un efecto es una lista corta de **pasos** con números. Por ejemplo, «Cálido»
 | `fundido` | `entrada`, `salida` 0–3 (segundos) · `color` `negro` o `blanco` |
 | `transicion` | `duracion` 0,1–1,5 (segundos) · `color` `negro` o `blanco` |
 
+**Transiciones** (en cada corte o división del tramo; `duracion` 0,1–1 s, centrada en la unión):
+
+| Paso (`tipo`) | Qué hace | Campos (rangos) |
+|---|---|---|
+| `interferencia` | La imagen se descompone (glitch): canales de color corridos y franjas que saltan | `intensidad` 0,1–1 |
+| `destello` | Un destello de color que además sube la exposición | `color` `#RRGGBB` · `intensidad` 0,1–1 · `exposicion` 0–1 |
+| `franjas` | La imagen se parte en franjas que salen y entran con el clip siguiente | `franjas` 2 o 3 · `direccion` `vertical` u `horizontal` |
+| `rebote` | Un salto de escala en el corte | `intensidad` 0,1–1 |
+| `barrido` | La imagen se desliza y entra la siguiente | `direccion` `izquierda`, `derecha`, `arriba` o `abajo` · `desenfoque` 0–1 (estela) |
+| `zoom_paso` | Un acercamiento rápido que cruza el corte | `intensidad` 0,1–1 · `desenfoque` 0–1 |
+
 1. **Pruébalo en Corta:** guarda tu archivo en `~/Corta/.corta/efectos/<id>.json` y ábrelo en la pestaña Efectos con un video tuyo.
 2. **Compártelo:** abre un [issue «Proponer un efecto»](https://github.com/corta-app/corta-catalogo/issues/new?template=efecto.yml) y
    pega el JSON (lo sumamos por ti), o abre un pull request con `efectos/<categoria>/<id>.json` después de correr
@@ -77,7 +88,7 @@ catálogo o de los que trae Corta) y un estilo de subtítulos de Corta (`caja`, 
 | Campo | Qué es |
 |---|---|
 | `proporcion` | `9:16` (Shorts, Reels, TikTok), `1:1`, `4:5` o `16:9`. |
-| `huecos` | De 1 a 20, en orden; entre todos, hasta 90 segundos. Cada uno: `dur` (0,5 a 15 s), `tipo` (`video`, `foto` o `cualquiera`: lo que conviene poner), y opcionales `pista` (qué poner, hasta 40 caracteres), `efectos` (hasta 3, solo en ese hueco; no transiciones), `transicion` (cómo pasa al siguiente: un efecto con pasos `transicion`, como `destello`, `transicion-negro` o `parpadeo`) y `zoom` (si cae una foto: `acercar`, que es lo normal, `alejar` o `no`). |
+| `huecos` | De 1 a 20, en orden; entre todos, hasta 90 segundos. Cada uno: `dur` (0,5 a 15 s), `tipo` (`video`, `foto` o `cualquiera`: lo que conviene poner), y opcionales `pista` (qué poner, hasta 40 caracteres), `efectos` (hasta 3, solo en ese hueco; no transiciones), `transicion` (cómo pasa al siguiente: un efecto con solo pasos de transición, como `destello`, `transicion-negro`, `parpadeo`, `barrido` o `cortina`) y `zoom` (si cae una foto: `acercar`, que es lo normal, `alejar` o `no`). |
 | `textos` | Opcional, hasta 10: `en_hueco` (número del hueco, desde 0), `texto` (hasta 60 caracteres) y `posicion` (altura, de 0,08 arriba a 0,9 abajo). |
 | `subtitulos` | Opcional: `estilo` (con él se dibujan los subtítulos y los textos) y `activos`. |
 | `efectos` | Opcional: hasta 3 efectos para todo el video (un filtro, `fundido-entrada`, `fundido-salida`…). |
@@ -109,12 +120,13 @@ editor downloads, sorted by category. Each file is **data-only JSON**: the app v
 and builds the preview (CSS) and the export (a whitelist of ffmpeg filters) from its numbers, so nothing here can ever run code.
 
 **Effects** (`efectos/`: `filtro` filters, `color`, `movimiento` motion, `transicion` transitions) are a short list of steps (color,
-tint, blur, vignette, zoom, fade, transition) with numbers in known ranges.
+tint, blur, vignette, zoom, fade, transition) with numbers in known ranges. Transitions at every cut can blink, glitch
+(`interferencia`), flash (`destello`), split into strips (`franjas`), bounce (`rebote`), swipe (`barrido`) or zoom through (`zoom_paso`).
 
 **Templates** (`plantillas/`: `negocios` business, `presentacion` intros, `recuerdos` memories, `tutorial`, `celebracion` celebrations)
 are pre-made videos with **slots** for your clips or photos: each slot's length (`dur`), what fits best (`tipo`: `video`, `foto` photo
 or `cualquiera` any), an optional hint (`pista`), effects for that slot, the transition to the next slot (an effect made of
-`transicion` steps), an optional zoom for photos, texts on top of a slot, the caption style, effects for the whole video and the music
+transition steps only), an optional zoom for photos, texts on top of a slot, the caption style, effects for the whole video and the music
 tempo the cuts were designed for (`bpm` only: templates never include music, footage or images). In Corta you pick a template, pick your
 clips, and the video builds itself; then you edit it like any other video. If a template uses a catalog effect you don't have, Corta
 offers to download it.

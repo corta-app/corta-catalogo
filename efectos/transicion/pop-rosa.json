@@ -1,0 +1,33 @@
+{
+ "formato": 1,
+ "id": "pop-rosa",
+ "categoria": "transicion",
+ "nombre": {
+  "es": "Pop rosa",
+  "en": "Pink pop"
+ },
+ "descripcion": {
+  "es": "Un rebote con un destello rosado, para videos alegres.",
+  "en": "A bounce with a pink flash, for cheerful videos."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "beat",
+  "rosa",
+  "pink"
+ ],
+ "pasos": [
+  {
+   "tipo": "rebote",
+   "duracion": 0.4,
+   "intensidad": 0.7
+  },
+  {
+   "tipo": "destello",
+   "duracion": 0.3,
+   "color": "#FF5FA2",
+   "intensidad": 0.5,
+   "exposicion": 0.2
+  }
+ ]
+}

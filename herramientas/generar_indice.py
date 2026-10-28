@@ -6,8 +6,8 @@ Uso: python3 herramientas/generar_indice.py   (desde la raíz del catálogo; sol
 Todo es solo datos. Se rechaza cualquier archivo que no cumpla su formato (herramientas/efecto_formato.py y
 herramientas/plantilla_formato.py: los mismos archivos que usa la app para validar lo que descarga), que no esté en la carpeta de su
 categoría, que pese más de 64 KB o que repita un id. Una plantilla además solo puede usar efectos que existan (los de este catálogo o
-los que trae la app) y un estilo de subtítulos que traiga la app; una transición entre clips tiene que ser un efecto de pasos
-«transicion».
+los que trae la app) y un estilo de subtítulos que traiga la app; una transición entre clips tiene que ser un efecto con solo pasos
+de transición (efecto_formato.TRANSICIONES).
 El índice lleva la huella SHA-256 y el tamaño de cada archivo: la app los compara con lo que descarga antes de guardarlo.
 """
 import hashlib

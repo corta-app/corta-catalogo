@@ -1,0 +1,31 @@
+{
+ "formato": 1,
+ "id": "senal-perdida",
+ "categoria": "transicion",
+ "nombre": {
+  "es": "Señal perdida",
+  "en": "Lost signal"
+ },
+ "descripcion": {
+  "es": "La imagen se cae como una señal mala y vuelve ya con el clip siguiente.",
+  "en": "The picture breaks up like a bad signal and comes back on the next clip."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "glitch",
+  "tv",
+  "señal"
+ ],
+ "pasos": [
+  {
+   "tipo": "interferencia",
+   "duracion": 0.8,
+   "intensidad": 1
+  },
+  {
+   "tipo": "transicion",
+   "duracion": 0.2,
+   "color": "negro"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "formato": 1,
+ "id": "cortina",
+ "categoria": "transicion",
+ "nombre": {
+  "es": "Cortina",
+  "en": "Curtain"
+ },
+ "descripcion": {
+  "es": "Tres franjas horizontales se cruzan y abren el clip siguiente.",
+  "en": "Three horizontal strips cross and open the next clip."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "split",
+  "horizontal"
+ ],
+ "pasos": [
+  {
+   "tipo": "franjas",
+   "duracion": 0.8,
+   "franjas": 3,
+   "direccion": "horizontal"
+  }
+ ]
+}

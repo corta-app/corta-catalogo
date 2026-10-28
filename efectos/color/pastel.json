@@ -1,0 +1,27 @@
+{
+ "formato": 1,
+ "id": "pastel",
+ "categoria": "color",
+ "nombre": {
+  "es": "Pastel",
+  "en": "Pastel"
+ },
+ "descripcion": {
+  "es": "Suave y claro, con poco contraste.",
+  "en": "Soft and light, with low contrast."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "suave",
+  "soft",
+  "claro"
+ ],
+ "pasos": [
+  {
+   "tipo": "color",
+   "brillo": 1.08,
+   "contraste": 0.85,
+   "saturacion": 0.8
+  }
+ ]
+}

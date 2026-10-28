@@ -1,0 +1,27 @@
+{
+ "formato": 1,
+ "id": "zoom-dramatico",
+ "categoria": "movimiento",
+ "nombre": {
+  "es": "Zoom dramático",
+  "en": "Dramatic zoom"
+ },
+ "descripcion": {
+  "es": "Se acerca mucho durante el tramo, para un momento de tensión.",
+  "en": "Moves in a lot during the segment, for a tense moment."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "drama",
+  "tensión",
+  "tension"
+ ],
+ "pasos": [
+  {
+   "tipo": "zoom",
+   "desde": 1,
+   "hasta": 1.5,
+   "curva": "lineal"
+  }
+ ]
+}

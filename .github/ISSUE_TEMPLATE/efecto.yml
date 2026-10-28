@@ -1,0 +1,29 @@
+name: ✨ Proponer un efecto / Propose an effect
+description: Pega el JSON de tu efecto (pruébalo antes en Corta). / Paste your effect's JSON (try it in Corta first).
+labels: [propuesta]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Formato y ejemplos en el [README](https://github.com/corta-app/corta-catalogo#readme). Solo datos: nada de código, HTML ni datos personales.
+        Format and examples in the README. Data only: no code, HTML or personal data.
+  - type: textarea
+    id: efecto
+    attributes:
+      label: El efecto (JSON) / The effect (JSON)
+      render: json
+    validations: { required: true }
+  - type: input
+    id: probado
+    attributes:
+      label: ¿Con qué tipo de video lo probaste? / What kind of video did you try it with?
+      placeholder: ej. un Short hablando a cámara de noche / e.g. a talking-head Short at night
+  - type: checkboxes
+    id: reglas
+    attributes:
+      label: Antes de enviar / Before sending
+      options:
+        - label: Lo probé en Corta y se ve bien / I tried it in Corta and it looks good
+          required: true
+        - label: No tiene nada personal ni marcas / It has nothing personal or branded
+          required: true

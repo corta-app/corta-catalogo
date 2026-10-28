@@ -1,0 +1,200 @@
+{
+ "formato": 1,
+ "efectos": [
+  {
+   "formato": 1,
+   "id": "pastel",
+   "categoria": "color",
+   "nombre": {
+    "es": "Pastel",
+    "en": "Pastel"
+   },
+   "descripcion": {
+    "es": "Suave y claro, con poco contraste.",
+    "en": "Soft and light, with low contrast."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "suave",
+    "soft",
+    "claro"
+   ],
+   "pasos": [
+    {
+     "tipo": "color",
+     "brillo": 1.08,
+     "contraste": 0.85,
+     "saturacion": 0.8
+    }
+   ],
+   "archivo": "efectos/color/pastel.json",
+   "sha256": "814626004de8971a4d6cb961e08f0d9056066f8823b3d126e4d884c5f192cf84",
+   "bytes": 399
+  },
+  {
+   "formato": 1,
+   "id": "verano",
+   "categoria": "color",
+   "nombre": {
+    "es": "Verano",
+    "en": "Summer"
+   },
+   "descripcion": {
+    "es": "Luz amarilla y colores vivos.",
+    "en": "Yellow light and lively colors."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "sol",
+    "sun",
+    "playa",
+    "beach"
+   ],
+   "pasos": [
+    {
+     "tipo": "color",
+     "brillo": 1.06,
+     "saturacion": 1.3
+    },
+    {
+     "tipo": "tinte",
+     "color": "#FFD34D",
+     "fuerza": 0.08
+    }
+   ],
+   "archivo": "efectos/color/verano.json",
+   "sha256": "922d826c822a81a8561b2f38df8ec3839e8d6165f47b873e624a9b214e0a0d30",
+   "bytes": 447
+  },
+  {
+   "formato": 1,
+   "id": "neon",
+   "categoria": "filtro",
+   "nombre": {
+    "es": "Neón",
+    "en": "Neon"
+   },
+   "descripcion": {
+    "es": "Colores eléctricos, como de noche en la ciudad.",
+    "en": "Electric colors, like the city at night."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "noche",
+    "night",
+    "ciudad",
+    "city"
+   ],
+   "pasos": [
+    {
+     "tipo": "color",
+     "contraste": 1.15,
+     "saturacion": 1.6,
+     "tono": 40
+    },
+    {
+     "tipo": "vineta",
+     "fuerza": 0.4
+    }
+   ],
+   "archivo": "efectos/filtro/neon.json",
+   "sha256": "cc0153c882cd18b8f8ef5c5afc837558cef433a25b9936e9aaaeef0b598840ed",
+   "bytes": 470
+  },
+  {
+   "formato": 1,
+   "id": "pelicula",
+   "categoria": "filtro",
+   "nombre": {
+    "es": "Película antigua",
+    "en": "Old film"
+   },
+   "descripcion": {
+    "es": "Sepia, poco contraste y bordes muy oscuros.",
+    "en": "Sepia, low contrast and very dark edges."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "cine",
+    "film",
+    "retro"
+   ],
+   "pasos": [
+    {
+     "tipo": "color",
+     "contraste": 0.85,
+     "sepia": 0.6,
+     "grises": 0.2
+    },
+    {
+     "tipo": "vineta",
+     "fuerza": 0.8
+    }
+   ],
+   "archivo": "efectos/filtro/pelicula.json",
+   "sha256": "0327745992b41cfe2465bd15463f0caa7ee6f989dcda14c920e709a93b92c802",
+   "bytes": 470
+  },
+  {
+   "formato": 1,
+   "id": "zoom-dramatico",
+   "categoria": "movimiento",
+   "nombre": {
+    "es": "Zoom dramático",
+    "en": "Dramatic zoom"
+   },
+   "descripcion": {
+    "es": "Se acerca mucho durante el tramo, para un momento de tensión.",
+    "en": "Moves in a lot during the segment, for a tense moment."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "drama",
+    "tensión",
+    "tension"
+   ],
+   "pasos": [
+    {
+     "tipo": "zoom",
+     "desde": 1,
+     "hasta": 1.5,
+     "curva": "lineal"
+    }
+   ],
+   "archivo": "efectos/movimiento/zoom-dramatico.json",
+   "sha256": "bb7f8011fe65a4becff13d88667c96c58f3bc327144b98b15d3df2067d65ac3a",
+   "bytes": 472
+  },
+  {
+   "formato": 1,
+   "id": "fundido-blanco",
+   "categoria": "transicion",
+   "nombre": {
+    "es": "Fundido a blanco",
+    "en": "Fade to white"
+   },
+   "descripcion": {
+    "es": "Entra y sale desde blanco, como un recuerdo.",
+    "en": "Fades in and out from white, like a memory."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "recuerdo",
+    "memory",
+    "sueño",
+    "dream"
+   ],
+   "pasos": [
+    {
+     "tipo": "fundido",
+     "entrada": 0.6,
+     "salida": 0.6,
+     "color": "blanco"
+    }
+   ],
+   "archivo": "efectos/transicion/fundido-blanco.json",
+   "sha256": "6544ebbefb85c9631468bb70a4ed0aee2403154889b1697d9c688dfcf5a1d4b9",
+   "bytes": 463
+  }
+ ]
+}

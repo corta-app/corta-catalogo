@@ -1,0 +1,28 @@
+{
+ "formato": 1,
+ "id": "fundido-blanco",
+ "categoria": "transicion",
+ "nombre": {
+  "es": "Fundido a blanco",
+  "en": "Fade to white"
+ },
+ "descripcion": {
+  "es": "Entra y sale desde blanco, como un recuerdo.",
+  "en": "Fades in and out from white, like a memory."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "recuerdo",
+  "memory",
+  "sueño",
+  "dream"
+ ],
+ "pasos": [
+  {
+   "tipo": "fundido",
+   "entrada": 0.6,
+   "salida": 0.6,
+   "color": "blanco"
+  }
+ ]
+}

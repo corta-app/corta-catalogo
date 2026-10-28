@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Conversar con la comunidad de Corta
+    url: https://github.com/corta-app/corta/discussions
+    about: Preguntas, ideas y lo que editaste. / Questions, ideas and what you edited.
+  - name: 🐞 Algo falla en la app
+    url: https://github.com/corta-app/corta/issues/new/choose
+    about: Errores e ideas de la app van en el repo principal. / App bugs and ideas go to the main repo.

@@ -1,0 +1,32 @@
+{
+ "formato": 1,
+ "id": "neon",
+ "categoria": "filtro",
+ "nombre": {
+  "es": "Neón",
+  "en": "Neon"
+ },
+ "descripcion": {
+  "es": "Colores eléctricos, como de noche en la ciudad.",
+  "en": "Electric colors, like the city at night."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "noche",
+  "night",
+  "ciudad",
+  "city"
+ ],
+ "pasos": [
+  {
+   "tipo": "color",
+   "contraste": 1.15,
+   "saturacion": 1.6,
+   "tono": 40
+  },
+  {
+   "tipo": "vineta",
+   "fuerza": 0.4
+  }
+ ]
+}

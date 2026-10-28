@@ -1,0 +1,32 @@
+{
+ "formato": 1,
+ "id": "verano",
+ "categoria": "color",
+ "nombre": {
+  "es": "Verano",
+  "en": "Summer"
+ },
+ "descripcion": {
+  "es": "Luz amarilla y colores vivos.",
+  "en": "Yellow light and lively colors."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "sol",
+  "sun",
+  "playa",
+  "beach"
+ ],
+ "pasos": [
+  {
+   "tipo": "color",
+   "brillo": 1.06,
+   "saturacion": 1.3
+  },
+  {
+   "tipo": "tinte",
+   "color": "#FFD34D",
+   "fuerza": 0.08
+  }
+ ]
+}

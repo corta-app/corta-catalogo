@@ -1,0 +1,31 @@
+{
+ "formato": 1,
+ "id": "pelicula",
+ "categoria": "filtro",
+ "nombre": {
+  "es": "Película antigua",
+  "en": "Old film"
+ },
+ "descripcion": {
+  "es": "Sepia, poco contraste y bordes muy oscuros.",
+  "en": "Sepia, low contrast and very dark edges."
+ },
+ "autor": "Corta",
+ "etiquetas": [
+  "cine",
+  "film",
+  "retro"
+ ],
+ "pasos": [
+  {
+   "tipo": "color",
+   "contraste": 0.85,
+   "sepia": 0.6,
+   "grises": 0.2
+  },
+  {
+   "tipo": "vineta",
+   "fuerza": 0.8
+  }
+ ]
+}

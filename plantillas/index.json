@@ -83,6 +83,82 @@
   },
   {
    "formato": 1,
+   "id": "la-repeticion",
+   "categoria": "recuerdos",
+   "nombre": {
+    "es": "La repetición",
+    "en": "The replay"
+   },
+   "descripcion": {
+    "es": "La jugada a velocidad normal y después la repetición en cámara lenta, como en la tele.",
+    "en": "The play at normal speed, then the slow-motion replay, just like on TV."
+   },
+   "autor": "Corta",
+   "etiquetas": [
+    "deporte",
+    "fútbol",
+    "cámara lenta",
+    "replay"
+   ],
+   "proporcion": "9:16",
+   "huecos": [
+    {
+     "dur": 4,
+     "tipo": "video",
+     "pista": {
+      "es": "La jugada",
+      "en": "The play"
+     },
+     "transicion": "barrido"
+    },
+    {
+     "dur": 2,
+     "tipo": "video",
+     "pista": {
+      "es": "La misma jugada, de cerca",
+      "en": "The same play, up close"
+     },
+     "velocidad": {
+      "v": 0.25,
+      "suavizar": "mezcla"
+     },
+     "efectos": [
+      "contraste"
+     ],
+     "transicion": "destello"
+    },
+    {
+     "dur": 2,
+     "tipo": "cualquiera",
+     "pista": {
+      "es": "El festejo",
+      "en": "The celebration"
+     }
+    }
+   ],
+   "textos": [
+    {
+     "en_hueco": 1,
+     "texto": {
+      "es": "Repetición",
+      "en": "Replay"
+     },
+     "posicion": 0.12
+    }
+   ],
+   "subtitulos": {
+    "estilo": "titular",
+    "activos": false
+   },
+   "musica": {
+    "bpm": 124
+   },
+   "archivo": "plantillas/recuerdos/la-repeticion.json",
+   "sha256": "f6b9ba899ab14981a8ee6fed881fe5ac87e2ee4e5f49ba4d6f7eaad0c15317b7",
+   "bytes": 1210
+  },
+  {
+   "formato": 1,
    "id": "mi-mascota",
    "categoria": "recuerdos",
    "nombre": {

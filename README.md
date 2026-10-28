@@ -88,7 +88,7 @@ catálogo o de los que trae Corta) y un estilo de subtítulos de Corta (`caja`, 
 | Campo | Qué es |
 |---|---|
 | `proporcion` | `9:16` (Shorts, Reels, TikTok), `1:1`, `4:5` o `16:9`. |
-| `huecos` | De 1 a 20, en orden; entre todos, hasta 90 segundos. Cada uno: `dur` (0,5 a 15 s), `tipo` (`video`, `foto` o `cualquiera`: lo que conviene poner), y opcionales `pista` (qué poner, hasta 40 caracteres), `efectos` (hasta 3, solo en ese hueco; no transiciones), `transicion` (cómo pasa al siguiente: un efecto con solo pasos de transición, como `destello`, `transicion-negro`, `parpadeo`, `barrido` o `cortina`) y `zoom` (si cae una foto: `acercar`, que es lo normal, `alejar` o `no`). |
+| `huecos` | De 1 a 20, en orden; entre todos, hasta 90 segundos. Cada uno: `dur` (0,5 a 15 s), `tipo` (`video`, `foto` o `cualquiera`: lo que conviene poner), y opcionales `pista` (qué poner, hasta 40 caracteres), `efectos` (hasta 3, solo en ese hueco; no transiciones), `transicion` (cómo pasa al siguiente: un efecto con solo pasos de transición, como `destello`, `transicion-negro`, `parpadeo`, `barrido` o `cortina`) `zoom` (si cae una foto: `acercar`, que es lo normal, `alejar` o `no`) y `velocidad`: `{"v": 0.25 a 3}` (menos de 1 es cámara lenta), `"rampa": true` para pasar suave de 1× a `v` (hasta 0,75) y volver, `"audio": "tono"` o `"silencio"` y, en cámara lenta, `"suavizar": "mezcla"` o `"movimiento"`. Con velocidad, el hueco dura `dur / v` en el video. Necesita una versión de Corta con velocidad por tramo (las anteriores no muestran esa plantilla). |
 | `textos` | Opcional, hasta 10: `en_hueco` (número del hueco, desde 0), `texto` (hasta 60 caracteres) y `posicion` (altura, de 0,08 arriba a 0,9 abajo). |
 | `subtitulos` | Opcional: `estilo` (con él se dibujan los subtítulos y los textos) y `activos`. |
 | `efectos` | Opcional: hasta 3 efectos para todo el video (un filtro, `fundido-entrada`, `fundido-salida`…). |
@@ -126,7 +126,8 @@ tint, blur, vignette, zoom, fade, transition) with numbers in known ranges. Tran
 **Templates** (`plantillas/`: `negocios` business, `presentacion` intros, `recuerdos` memories, `tutorial`, `celebracion` celebrations)
 are pre-made videos with **slots** for your clips or photos: each slot's length (`dur`), what fits best (`tipo`: `video`, `foto` photo
 or `cualquiera` any), an optional hint (`pista`), effects for that slot, the transition to the next slot (an effect made of
-transition steps only), an optional zoom for photos, texts on top of a slot, the caption style, effects for the whole video and the music
+transition steps only), an optional zoom for photos, an optional speed per slot (`velocidad`: slow or fast motion, or a smooth
+slow-motion ramp), texts on top of a slot, the caption style, effects for the whole video and the music
 tempo the cuts were designed for (`bpm` only: templates never include music, footage or images). In Corta you pick a template, pick your
 clips, and the video builds itself; then you edit it like any other video. If a template uses a catalog effect you don't have, Corta
 offers to download it.
